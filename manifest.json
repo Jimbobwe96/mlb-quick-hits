@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "MLB Quick Hits",
+  "version": "1.0",
+  "description": "Delivering real-time advanced baseball analytics to your browser",
+
+  "permissions": ["activeTab"],
+
+  "host_permissions": [
+    "https://baseballsavant.mlb.com/*",
+    "https://img.mlbstatic.com/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "MLB Quick Hits"
+  },
+
+  "icons": {}
+}
